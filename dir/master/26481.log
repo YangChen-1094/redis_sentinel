@@ -1,0 +1,22 @@
+22845:X 24 Nov 2020 17:02:46.013 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+22845:X 24 Nov 2020 17:02:46.013 # Redis version=5.0.10, bits=64, commit=00000000, modified=0, pid=22845, just started
+22845:X 24 Nov 2020 17:02:46.013 # Configuration loaded
+22846:X 24 Nov 2020 17:02:46.015 * Running mode=sentinel, port=26481.
+22846:X 24 Nov 2020 17:02:46.015 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+22846:X 24 Nov 2020 17:02:46.019 # Sentinel ID is a41a277fe42c95c698610a6646fdaab26ef7e09c
+22846:X 24 Nov 2020 17:02:46.019 # +monitor master mymaster 127.0.0.1 6479 quorum 2
+22846:X 24 Nov 2020 17:02:46.020 * +slave slave 127.0.0.1:6480 127.0.0.1 6480 @ mymaster 127.0.0.1 6479
+22846:X 24 Nov 2020 17:02:46.020 * +slave slave 127.0.0.1:6481 127.0.0.1 6481 @ mymaster 127.0.0.1 6479
+22846:X 24 Nov 2020 17:02:46.684 * +sentinel sentinel d4a37020c85b66709927dc62962a9c219e6159d0 127.0.0.1 26479 @ mymaster 127.0.0.1 6479
+22846:X 24 Nov 2020 17:02:47.090 * +sentinel sentinel 0fd3a90d2eccd83bb5332a70c064219e61190fbc 127.0.0.1 26480 @ mymaster 127.0.0.1 6479
+22846:X 24 Nov 2020 17:05:56.288 # +sdown master mymaster 127.0.0.1 6479
+22846:X 24 Nov 2020 17:05:56.333 # +new-epoch 1
+22846:X 24 Nov 2020 17:05:56.334 # +vote-for-leader 0fd3a90d2eccd83bb5332a70c064219e61190fbc 1
+22846:X 24 Nov 2020 17:05:56.360 # +odown master mymaster 127.0.0.1 6479 #quorum 3/2
+22846:X 24 Nov 2020 17:05:56.360 # Next failover delay: I will not start a failover before Tue Nov 24 17:06:26 2020
+22846:X 24 Nov 2020 17:05:56.788 # +config-update-from sentinel 0fd3a90d2eccd83bb5332a70c064219e61190fbc 127.0.0.1 26480 @ mymaster 127.0.0.1 6479
+22846:X 24 Nov 2020 17:05:56.788 # +switch-master mymaster 127.0.0.1 6479 127.0.0.1 6480
+22846:X 24 Nov 2020 17:05:56.788 * +slave slave 127.0.0.1:6481 127.0.0.1 6481 @ mymaster 127.0.0.1 6480
+22846:X 24 Nov 2020 17:05:56.789 * +slave slave 127.0.0.1:6479 127.0.0.1 6479 @ mymaster 127.0.0.1 6480
+22846:X 24 Nov 2020 17:06:26.866 # +sdown slave 127.0.0.1:6479 127.0.0.1 6479 @ mymaster 127.0.0.1 6480
+22846:X 24 Nov 2020 17:06:43.568 # -sdown slave 127.0.0.1:6479 127.0.0.1 6479 @ mymaster 127.0.0.1 6480

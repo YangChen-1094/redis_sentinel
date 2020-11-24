@@ -1,0 +1,21 @@
+22829:X 24 Nov 2020 17:02:04.085 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+22829:X 24 Nov 2020 17:02:04.085 # Redis version=5.0.10, bits=64, commit=00000000, modified=0, pid=22829, just started
+22829:X 24 Nov 2020 17:02:04.085 # Configuration loaded
+22830:X 24 Nov 2020 17:02:04.087 * Running mode=sentinel, port=26479.
+22830:X 24 Nov 2020 17:02:04.087 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+22830:X 24 Nov 2020 17:02:04.088 # Sentinel ID is d4a37020c85b66709927dc62962a9c219e6159d0
+22830:X 24 Nov 2020 17:02:04.088 # +monitor master mymaster 127.0.0.1 6479 quorum 2
+22830:X 24 Nov 2020 17:02:04.088 * +slave slave 127.0.0.1:6480 127.0.0.1 6480 @ mymaster 127.0.0.1 6479
+22830:X 24 Nov 2020 17:02:04.089 * +slave slave 127.0.0.1:6481 127.0.0.1 6481 @ mymaster 127.0.0.1 6479
+22830:X 24 Nov 2020 17:02:12.380 * +sentinel sentinel 0fd3a90d2eccd83bb5332a70c064219e61190fbc 127.0.0.1 26480 @ mymaster 127.0.0.1 6479
+22830:X 24 Nov 2020 17:02:48.089 * +sentinel sentinel a41a277fe42c95c698610a6646fdaab26ef7e09c 127.0.0.1 26481 @ mymaster 127.0.0.1 6479
+22830:X 24 Nov 2020 17:05:56.223 # +sdown master mymaster 127.0.0.1 6479
+22830:X 24 Nov 2020 17:05:56.334 # +new-epoch 1
+22830:X 24 Nov 2020 17:05:56.334 # +vote-for-leader 0fd3a90d2eccd83bb5332a70c064219e61190fbc 1
+22830:X 24 Nov 2020 17:05:56.788 # +config-update-from sentinel 0fd3a90d2eccd83bb5332a70c064219e61190fbc 127.0.0.1 26480 @ mymaster 127.0.0.1 6479
+22830:X 24 Nov 2020 17:05:56.788 # +switch-master mymaster 127.0.0.1 6479 127.0.0.1 6480
+22830:X 24 Nov 2020 17:05:56.788 * +slave slave 127.0.0.1:6481 127.0.0.1 6481 @ mymaster 127.0.0.1 6480
+22830:X 24 Nov 2020 17:05:56.788 * +slave slave 127.0.0.1:6479 127.0.0.1 6479 @ mymaster 127.0.0.1 6480
+22830:X 24 Nov 2020 17:06:26.828 # +sdown slave 127.0.0.1:6479 127.0.0.1 6479 @ mymaster 127.0.0.1 6480
+22830:X 24 Nov 2020 17:06:43.499 # -sdown slave 127.0.0.1:6479 127.0.0.1 6479 @ mymaster 127.0.0.1 6480
+22830:X 24 Nov 2020 17:06:53.404 * +convert-to-slave slave 127.0.0.1:6479 127.0.0.1 6479 @ mymaster 127.0.0.1 6480

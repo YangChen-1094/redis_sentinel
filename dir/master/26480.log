@@ -1,0 +1,39 @@
+22834:X 24 Nov 2020 17:02:10.334 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+22834:X 24 Nov 2020 17:02:10.334 # Redis version=5.0.10, bits=64, commit=00000000, modified=0, pid=22834, just started
+22834:X 24 Nov 2020 17:02:10.334 # Configuration loaded
+22835:X 24 Nov 2020 17:02:10.336 * Running mode=sentinel, port=26480.
+22835:X 24 Nov 2020 17:02:10.336 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+22835:X 24 Nov 2020 17:02:10.336 # Sentinel ID is 0fd3a90d2eccd83bb5332a70c064219e61190fbc
+22835:X 24 Nov 2020 17:02:10.337 # +monitor master mymaster 127.0.0.1 6479 quorum 2
+22835:X 24 Nov 2020 17:02:10.337 * +slave slave 127.0.0.1:6480 127.0.0.1 6480 @ mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:02:10.338 * +slave slave 127.0.0.1:6481 127.0.0.1 6481 @ mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:02:12.192 * +sentinel sentinel d4a37020c85b66709927dc62962a9c219e6159d0 127.0.0.1 26479 @ mymaster 127.0.0.1 6479
+22839:X 24 Nov 2020 17:02:14.150 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+22839:X 24 Nov 2020 17:02:14.150 # Redis version=5.0.10, bits=64, commit=00000000, modified=0, pid=22839, just started
+22839:X 24 Nov 2020 17:02:14.150 # Configuration loaded
+22840:X 24 Nov 2020 17:02:14.152 # Could not create server TCP listening socket *:26480: bind: Address already in use
+22835:X 24 Nov 2020 17:02:48.089 * +sentinel sentinel a41a277fe42c95c698610a6646fdaab26ef7e09c 127.0.0.1 26481 @ mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:05:56.261 # +sdown master mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:05:56.328 # +odown master mymaster 127.0.0.1 6479 #quorum 2/2
+22835:X 24 Nov 2020 17:05:56.328 # +new-epoch 1
+22835:X 24 Nov 2020 17:05:56.328 # +try-failover master mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:05:56.332 # +vote-for-leader 0fd3a90d2eccd83bb5332a70c064219e61190fbc 1
+22835:X 24 Nov 2020 17:05:56.334 # a41a277fe42c95c698610a6646fdaab26ef7e09c voted for 0fd3a90d2eccd83bb5332a70c064219e61190fbc 1
+22835:X 24 Nov 2020 17:05:56.334 # d4a37020c85b66709927dc62962a9c219e6159d0 voted for 0fd3a90d2eccd83bb5332a70c064219e61190fbc 1
+22835:X 24 Nov 2020 17:05:56.395 # +elected-leader master mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:05:56.395 # +failover-state-select-slave master mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:05:56.467 # +selected-slave slave 127.0.0.1:6480 127.0.0.1 6480 @ mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:05:56.467 * +failover-state-send-slaveof-noone slave 127.0.0.1:6480 127.0.0.1 6480 @ mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:05:56.525 * +failover-state-wait-promotion slave 127.0.0.1:6480 127.0.0.1 6480 @ mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:05:56.733 # +promoted-slave slave 127.0.0.1:6480 127.0.0.1 6480 @ mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:05:56.734 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:05:56.787 * +slave-reconf-sent slave 127.0.0.1:6481 127.0.0.1 6481 @ mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:05:57.428 # -odown master mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:05:57.750 * +slave-reconf-inprog slave 127.0.0.1:6481 127.0.0.1 6481 @ mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:05:57.750 * +slave-reconf-done slave 127.0.0.1:6481 127.0.0.1 6481 @ mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:05:57.803 # +failover-end master mymaster 127.0.0.1 6479
+22835:X 24 Nov 2020 17:05:57.803 # +switch-master mymaster 127.0.0.1 6479 127.0.0.1 6480
+22835:X 24 Nov 2020 17:05:57.803 * +slave slave 127.0.0.1:6481 127.0.0.1 6481 @ mymaster 127.0.0.1 6480
+22835:X 24 Nov 2020 17:05:57.803 * +slave slave 127.0.0.1:6479 127.0.0.1 6479 @ mymaster 127.0.0.1 6480
+22835:X 24 Nov 2020 17:06:27.851 # +sdown slave 127.0.0.1:6479 127.0.0.1 6479 @ mymaster 127.0.0.1 6480
+22835:X 24 Nov 2020 17:06:43.753 # -sdown slave 127.0.0.1:6479 127.0.0.1 6479 @ mymaster 127.0.0.1 6480
